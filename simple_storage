@@ -1,0 +1,15 @@
+pragma solidity >=0.8.4 <0.9.0;
+
+contract SimpleStorage {
+    uint storedData;
+
+// storage data
+    function set(uint x) public {
+        storedData = x;
+    }
+ 
+    function get() public view returns (uint) {
+        return storedData;
+    }
+  
+}
